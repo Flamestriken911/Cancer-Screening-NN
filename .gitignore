@@ -1,3 +1,7 @@
+# Data images (to keep down size)
+*.png
+*.jpg
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
