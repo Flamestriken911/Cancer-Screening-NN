@@ -1,3 +1,9 @@
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/**
+
+# Numpy data files
+*.npy
+
 # Data images (to keep down size)
 *.png
 *.jpg
