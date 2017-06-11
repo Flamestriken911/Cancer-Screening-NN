@@ -43,4 +43,8 @@ if __name__=='__main__':
             # Upload img
             if processed_img_filename is not None:
                 s3.upload_file(processed_img_filename, BUCKET, f'processed/train/{label}/{processed_img_filename}')
-
+                try:
+                    os.remove(processed_img_filename)
+                    os.remove(obj_filename)
+                except:
+                    print('Could not delete at least one of "{}", "{}"'.format(processed_img_filename, obj_filename))
